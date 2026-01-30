@@ -1,3 +1,4 @@
+V1 -
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -5,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>O mago da adivinhação✨</title>
 </head>
-
     <style>
         body{
             background-color: rgb(79, 53, 128);
@@ -15,7 +15,6 @@
             padding: 200px;
         
         }
-
         .container{
             
             background-color: rgb(155, 109, 199);
@@ -23,7 +22,6 @@
             border-radius: 25px;
             box-shadow: 0 8px 20px rgb(0, 0, 0);
         }
-
         button{
             background-color: rgb(105, 60, 148);
             border-radius: 10px;
@@ -31,63 +29,44 @@
             color: aliceblue;
             box-shadow: 0 8px 20px rgba(255, 255, 255, 0.322);
         }
-
         h1{
             color: aliceblue;
         }
-
         p{
             font-size: x-large;
             color: aliceblue;
         }
-            
     </style>
-
 <body>
-    
     <div class="container">
         <h1>Adivinhação: O mago da matemática!</h1>
-
         <p>Para iniciar a brincadeira mágica, basta clicar no botão começar! Não se esqueça de pegar a dica secreta, ela vai te ajudar! ✨ <br>
             Preparado(a) para testemunhar a mágica acontecer bem na sua frente?
         </p>
-
         <!-- onclick: evento = função -->
         <button onclick="mago()">Começar a mágica! 🧙‍♂️</button>
         <button onclick="alert('A calculadora é a sua melhor amiga nessa brincadeira, use-a!')">Dica secreta 🔮</button>
-       
     </div>
-
     <script>
         // função que sera chamada
         function mago(){
-
             //Contextualização pro usuário
             alert('Olá pequeno mago! Vamos começar o jogo das operações, ou melhor, o jogo da adivinhação? ');
             alert('Você irá começar escolhendo um número.');
             alert('Tudo pronto? Então vamos começar!');
-
             let desejado = Number(prompt('Escolha o número que você deseja receber no fim da mágica:'));
-
-            let aleatorio = alert('Agora pense em um número aleatório. Pensou? 🧙‍♂️ Então, agora, multiplique esse segundo número por 2.');
-            
+            let inicio = Number(prompt('Legal! Agora escolha um número inicial, aleatório...'));
+            alert('Pensou nesse segundo número? 🧙‍♂️ Então, agora, multiplique ele pelo número 2.');
+            let dobro_inicial = Number(inicio) *2;
             let dobro_desejado = Number(desejado) *2;
-
             alert('Agora some o resultado com o número '+dobro_desejado  + '!');
             alert('Você pequeno aprendiz... não confia no truque? Pois então divida o novo valor por 2. A mágica já está quase acabando!')
-
-            let soma = dobro_desejado + aleatorio;
-            let div = soma /2;
-
-            alert('Chegamos no último passo do desafio! Lembra do segundo número que você escolheu? Subtraia o resultado da divisão por esse número e......')
-            
+            let soma = dobro_desejado + dobro_inicial
+            let div = soma /
+            alert('Chegamos no último passo do desafio! Lembra do segundo número que você escolheu? O número '+inicio +'! Subtraia o resultado da divisão por esse número e......')
             alert('Uau! Aposto que o resultado deu o primeiro número que você escolheu, no caso o '+desejado +'! Acertei?')
             alert('Legal né? Vamos adivinhar novamente?')
-
-    
         };
     </script>
-
-
 </body>
 </html>
