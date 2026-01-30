@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>O mago da adivinhação✨</title>
+</head>
+
+    <style>
+
+    </style>
+
+<body>
+    
+    <div class="container">
+        <h1>Adivinhação: O mago da matemática!</h1>
+
+        <p>Para iniciar a brincadeira mágica, basta clicar no botão começar! Não se esqueça de pegar a dica secreta, ela vai te ajudar! ✨</p>
+
+        <!-- onclick: evento = função -->
+        <button onclick="mago()">Começar a mágica! 🧙‍♂️</button>
+        <button onclick="alert('A calculadora é a sua melhor amiga nessa brincadeira, use-a!')">Dica secreta 🔮</button>
+       
+    </div>
+
+    <script>
+        // função que sera chamada
+        function mago(){
+
+            //Contextualização pro usuário
+            alert('Olá pequeno mago! Vamos começar o jogo das operações, ou melhor, o jogo da adivinhação? Antes de começar, preciso te dizer algumas coisas.....');
+            alert('Você irá começar escolhendo dois números: Um número que você ira obter no fim da mágica e um número inicial, apenas para começar a brincadeira. Mas lembre-se, não confunda ou esqueça esses números.');
+            alert('Tudo pronto? Então vamos começar!');
+
+            let desejado = Number(prompt('Escolha o número que você deseja receber no fim da mágica:'))
+            let inicio = Number(prompt('Legal! Agora escolha um número inicial, aleatório...'));
+
+            let dobro_inicial = Number(inicial) *2;
+            let dobro_desejado = Number(desejado) *2;
+
+            let soma = Number(dobro_desejado) + Number(dobro_inicial)
+        };
+    </script>
+
+
+</body>
+</html>
